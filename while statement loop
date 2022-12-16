@@ -1,0 +1,7 @@
+//While statement loop for mean grade
+
+#include <stdio.h>
+
+float main () {
+
+  int
