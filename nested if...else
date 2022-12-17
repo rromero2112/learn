@@ -1,0 +1,44 @@
+//if/else statement multi level (nested)
+
+#include <stdio.h>
+
+int main()
+
+{
+	int grade;  //variable stated
+	
+	printf("Please Enter Grade: ");   //prompt for a grade
+	scanf("%d",&grade);   //stores input into grade location on memory
+	
+	if (grade>=90)   //if statement of grade greater than or equal to 90
+	{
+		puts("A");   //prompt for TRUE if statement
+	}   //ends if
+	else 
+	{
+		if (grade>=80)
+		{
+		puts("B");
+		}   //ends if
+		else 
+		{
+			if (grade>=70)
+			{
+				puts("C");
+			}   //ends if
+			else
+			{
+				if (grade>=60)
+				{
+					puts("D");
+				}   //ends if
+				else
+				{
+					puts("F");
+				}	//ends else
+			}   //ends else
+		}   //ends else
+	}   //ends else
+	
+	return 0;   //ends function
+}
