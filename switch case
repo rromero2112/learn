@@ -1,1 +1,42 @@
 
+#include <stdio.h>   //format for input output
+
+int main()   //format expected for main function
+{
+	char fatDescription;   //declaring variable, 'char' as a data type
+	
+	printf("Enter 'A=Essential', 'B=Athlete', 'C=Fitness','D=Average', or F=Obese for fat percentage range: ");   //prompt for input from provided words
+	scanf("%c",&fatDescription);   //reads input and stores to memory
+	
+//output the appropriate message
+
+	switch(fatDescription)   //switch...case selection
+{
+	case 'A':
+		{ printf("Essential fat range for men are 2-5%\n");   //output for specific input
+		printf("Essential fat range for women are 10-13%");
+		break;   //end case statement function
+		}
+	case 'B' :
+		{ printf("Athletes fat range for men are 2-5%\n");
+		printf("Athletes fat range for women are 10-13%");
+		break;
+		}
+	case 'C':
+		{ printf("Fitness fat range for men are 2-5%\n");
+		printf("Fitness fat range for women are 10-13%");
+		break;
+		}
+	case 'D' :
+		{ printf("Average fat range for men are 2-5%\n");
+		printf("Average fat range for women are 10-13%");
+		break;
+		}
+	default:
+		{ printf("Obese fat range for men are 2-5%\n");
+		printf("Obese fat range for women are 10-13%");
+		break;
+		}
+}
+return 0;
+}
