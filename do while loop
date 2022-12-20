@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+	
+	char answer;   //sentinel value to allow the user to end the loop
+	
+	do
+	{
+		printf("C is fun!\n");   
+		printf("Do you want to see the message again (Y/N): ");   //prompt user for input
+		scanf(" %c", &answer);   //very important to put a space in between " and % or the do loop will after one iteration
+		
+	} while(answer=='Y' || answer=='y');   //sentinel value is checked to keep do loop going or end it
+	
+	printf("\nThat's all for now.");
+		
+	return 0;
+}
