@@ -1,0 +1,31 @@
+//Using while loop with counter to ask for a password.
+
+
+#include <stdio.h>
+
+int main()
+{
+	int count, password;   //variables stated for counter and password
+	count=1;   //initializing count at 1 
+	password=11862;   //assigning passwword value
+	
+	while (count<=3)   //while statement goes of counter of three
+	{
+		printf("What is the password? (you get three tries) numbers only.\n");   //prompt for password numbers only
+		scanf("%d", &password);
+		
+		if (password==11862)   //if statement inside while loop to check input is equals to password value
+		{
+			printf("You entered the correct password.");   //TRUE if statement
+			count=count+3;   //adds 3 to counter ending the loop
+		}
+		else
+		{
+			printf("Try again.\n");   //else statement for FALSE if statement
+		} 
+		
+		count++;   //adds 1 to counter for each iteration
+	}
+	
+	return 0;
+}
