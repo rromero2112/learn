@@ -1,0 +1,73 @@
+//Input standard date format and outputs English derived date
+#include <stdio.h>
+
+int main(void) {
+  int month, day, year;
+
+  // Prompt for date in standard date form
+  printf("Enter date (mm/dd/yyyy): ");
+  // Split the user input into 3 variables for the date
+  scanf("%d /%d /%d", &month, &day, &year);
+
+  // Print the month
+  switch(month)
+  {
+    case(01):
+    printf("January ");
+    break;
+    case(02):
+    printf("February ");
+    break;
+    case(03):
+    printf("March ");
+    break;
+    case(04):
+    printf("April ");
+    break;
+    case(05):
+    printf("May ");
+    break;
+    case(06):
+    printf("June ");
+    break;
+    case(07):
+    printf("July ");
+    break;
+    case(8):
+    printf("August ");
+    break;
+    case(9):
+    printf("September ");
+    break;
+    case(10):
+    printf("October ");
+    break;
+    case(11):
+    printf("November ");
+    break;
+    case(12):
+    printf("December ");
+  }
+
+  // Print the suffix for a given day
+  switch (day)
+  {
+    case 1: case 21: case 31:   //Combines all numbers ending in "st" in a swtich case
+      printf("%dst, ", day);    
+      break;
+    case 2: case 22:
+      printf("%dnd, ", day);   
+      break;
+    case 3: case 23:
+      printf("%drd, ", day);   
+      break;
+    default:
+      printf("%dth, ", day);   //Default output for all numbers with "th" suffix
+  }
+
+  // Print the year
+  printf("%d", year);
+  
+    
+  return 0;
+}
