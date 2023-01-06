@@ -1,3 +1,4 @@
+//Output 1 - 100, but output "fizz" or "buzz" for numbers divisible by 3 or 5
 #include <stdio.h>
 
 int main()
