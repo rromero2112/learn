@@ -1,6 +1,4 @@
 //Pass an Array to a Function to Compute a Total
-//Ronaldo Romero
-//January 9, 2023
 
 #include <stdio.h>
 
@@ -8,7 +6,7 @@ int total(int scores[]);   //function prototype
 
 int main()
 {
-	int holes=1;   //variable hole declared and initialized to 1
+	int holes=1;   //variable holes declared and initialized to 1
 	int scores[9], counter, totalScore;   //array scores initialized with a size of 9, counter and totalScore declared
 	
 	for(counter=0;counter<=8;counter++)   //for statement to fill elements in scores array
