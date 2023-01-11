@@ -1,3 +1,4 @@
+//Switch case for fat percentage
 
 #include <stdio.h>   //format for input output
 
