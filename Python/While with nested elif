@@ -1,0 +1,32 @@
+#Calculating Gross pay for 5 days of work
+
+#Declaring and initializing variables
+_max = 5
+normal_rate = 15
+overtime_rate = 25
+total = 0
+pay = 0
+overtime = 0
+_grandTotal = 0
+total_pay = 0
+total_overtime = 0
+
+#Loop using (_max) as counter to calculate gross pay
+for counter in range (_max):
+
+    #prompt user for hours
+    hours = int(input(f'Enter your hours for Day {counter +1}: '))
+
+    #Evaluates the user input for hours to check normal or overtime rate
+    
+    if hours <= 8:
+        pay = hours * normal_rate
+        print(f'Your pay for Day {counter +1} is: {pay}.')
+        total_pay = total_pay + pay #Calculates total pay for normal rate
+    elif hours >= 9:
+        overtime = ((hours - 8) * overtime_rate)+(8*normal_rate)
+        print(f'Your pay for Day {counter +1} is: {overtime}')
+        total_overtime = total_overtime + overtime #Calculates total pay for overtime rate
+
+_grandTotal = total_pay + total_overtime #Calculates grand total of gross pay
+print(f'The total pay for the week is {_grandTotal}.')
